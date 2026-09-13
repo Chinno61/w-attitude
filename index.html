@@ -273,7 +273,33 @@ svg.graph text{font-family:var(--body);fill:var(--ink)}
 section[hidden]{display:none}
 @media (prefers-reduced-motion:reduce){.pc,.pc:hover{transform:none;transition:none}}
 @media (max-width:960px){.hero{min-height:420px;background-position:center top}.hero.single{grid-template-columns:1fr}.hero.single .pic{min-height:380px}.hero.single .pic::after{background:linear-gradient(180deg,transparent 55%,var(--bg2))}.prof{grid-template-columns:1fr}.prof .poster{max-width:380px}.radarwrap{grid-template-columns:1fr}.nav input{width:130px}.nav a.l{padding:22px 0;font-size:13px}}
-@media (max-width:640px){.hero h1{font-size:38px}.nav .wrap{gap:10px}.nav input{display:none}}
+@media (max-width:640px){
+  html,body{overflow-x:hidden}
+  .wrap{padding:0 14px}
+  .nav{border-bottom-width:2px}
+  .nav .wrap{flex-wrap:wrap;height:auto;gap:0 14px;padding:8px 12px 0}
+  .logo{height:36px;order:0}.logo svg{height:36px}
+  .nav .sp{display:none}.nav input{display:none}
+  .lang{order:1;margin-left:auto}
+  .nav a.l{order:2;padding:10px 4px 8px;font-size:12px;letter-spacing:.1em;margin-bottom:-2px;border-bottom-width:2px}
+  .ticker{font-size:12px}
+  .hero{min-height:300px;margin:12px 0}.hero .txt{padding:18px 16px;gap:8px}.hero .kick{font-size:10px;letter-spacing:.12em;line-height:1.5}.hero h1{font-size:34px}.hero p{font-size:13.5px}.hero .cta{gap:6px}.btn{padding:9px 12px;font-size:12px}
+  .sh{margin:26px 0 10px}.sh h2{font-size:24px}
+  .grid{grid-template-columns:repeat(2,1fr);gap:10px}
+  .two,.lines,.eplist{grid-template-columns:1fr}
+  .epcard .cv .num{font-size:24px}.epcard h3{font-size:24px}.epcard .st{gap:8px 12px}
+  .wk .num{min-width:0;font-size:26px}.wk h3{font-size:19px}.wk .rec{margin-left:0;flex-basis:100%}
+  .prof .poster{max-width:100%}.prof .sect h3{font-size:24px}
+  .radarwrap{padding:10px}
+  .ep .hd{padding:16px 0 12px}.ep .hd h1{font-size:40px}.ep .rail{top:0}
+  .seq{padding:24px 0 6px}.seq .sh2{gap:8px}.seq .sh2 .no{font-size:30px}.seq .sh2 h2{font-size:22px}.seq .sh2 .em{font-size:20px}.seq .smeta{font-size:11px}
+  .scr .shot{margin:20px 0 6px}.scr .act{font-size:14.5px}.scr .dl .en{font-size:14.5px}.scr .dl,.scr .gl{padding-left:10px}
+  .fig{margin:14px 0 20px}.fig figcaption{font-size:12px}
+  .ep .epnav a{font-size:17px}
+  .world h2{font-size:22px}
+  .mapwrap{overflow-x:auto}.mapwrap svg{min-width:900px;width:100%;height:auto}
+  .radarwrap svg{max-width:100%;height:auto}
+}
 </style>
 
 <div class="nav"><div class="wrap">
